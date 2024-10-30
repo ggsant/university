@@ -1,0 +1,47 @@
+Enunciado: Você e sua equipe de programadores foram contratados por pequena empresa para desenvolver o software de gerenciamento de funcionários. Este software deve ter o seguinte menu e opções:
+
+Cadastrar Funcionário
+Consultar Funcionário
+Consultar Todos 
+Consultar por Id
+Consultar por setor
+Retornar ao menu
+Remover Funcionário
+Encerrar Programa
+
+Elabore um programa em Python que: 
+Deve-se implementar o print com o seu nome completo (somente print, não usar input aqui). 
+Por exemplo: print(“Bem vindos a empresa do Bruno Kostiuk”)  [EXIGÊNCIA DE CÓDIGO 1 de 8];
+Deve-se implementar uma lista com o nome de lista_funcionarios e a variável id_global com valor inicial igual ao número de seu RU [EXIGÊNCIA DE CÓDIGO 2 de 8];
+Deve-se implementar uma função chamada cadastrar_funcionario(id) em que: [EXIGÊNCIA DE CÓDIGO 3 de 8];
+Pergunta nome, setor, salario do funcionário;
+Armazena o id (este é fornecido via parâmetro da função), nome, setor, salario dentro de um dicionário;
+Copiar o dicionário para dentro da lista_funcionarios (utilizar o copy);
+Deve-se implementar uma função chamada consultar_funcionarios() em que: [EXIGÊNCIA DE CÓDIGO 4 de 8];
+Deve-se perguntar qual opção deseja (1. Consultar Todos / 2. Consultar por Id / 3. Consultar por Setor / 4. Retornar ao menu):
+Se Consultar Todos, apresentar todos os funcionários com todos os seus dados cadastrados;
+Se Consultar por Id, solicitar ao usuário que informe um id, e apresentar o funcionário específico com todos os seus dados cadastrados;
+Se Consultar por Setor, solicitar ao usuário que informe o setor, e apresentar o(s) funcionário(s) do setor com todos os seus dados cadastrados;
+Se Retornar ao menu, deve-se retornar ao menu principal (return);
+Se Entrar com um valor diferente de 1, 2, 3 ou 4, printar “Opção inválida" e repetir a pergunta D.a.
+Enquanto o usuário não escolher a opção 4, o menu consultar funcionários deve se repetir.
+Deve-se implementar uma função chamada remover_funcionario() em que: [EXIGÊNCIA DE CÓDIGO 5 de 8];
+Deve-se pergunta pelo id do funcionário a ser removido;
+Remover o funcionário da lista_funcionarios;
+Se o id fornecido não for de um funcionário da lista, printar “Id inválido” e repetir a pergunta E.a.
+Deve-se implementar uma estrutura de menu no código principal (main), ou seja, não pode estar dentro de função, em que: [EXIGÊNCIA DE CÓDIGO 6 de 8];
+Deve-se pergunta qual opção deseja (1. Cadastrar Funcionário / 2. Consultar Funcionário / 3. Remover Funcionário / 4. Encerrar Programa):
+Se Cadastrar Funcionário, incrementar em um id_ global e chamar a função cadastrar_funcionario(id_ global);
+Se Consultar Funcionário, chamar função consultar_funcionario ();
+Se Remover Funcionário, chamar função remover_funcionario();
+Se Encerrar Programa, sair do menu (e com isso acabar a execução do código);
+Se Entrar com um valor diferente de 1, 2, 3 ou 4, printar “Opção inválida" e repetir a pergunta F.a.
+Enquanto o usuário não escolher a opção 4, o menu deve se repetir.
+Deve-se implementar uma lista de dicionários (uma lista contento dicionários dentro) [EXIGÊNCIA DE CÓDIGO 7 de 8];
+Deve-se inserir comentários relevantes no código [EXIGÊNCIA DE CÓDIGO 8 de 8];
+Deve-se apresentar na saída de console uma mensagem com o seu nome completo [EXIGÊNCIA DE SAÍDA DE CONSOLE 1 de 6];
+Deve-se apresentar na saída de console um cadastro de 3 funcionários (sendo 2 deles no mesmo setor) [EXIGÊNCIA DE SAÍDA DE CONSOLE 2 de 6];
+Deve-se apresentar na saída de console uma consulta de todos os funcionários [EXIGÊNCIA DE SAÍDA DE CONSOLE 3 de 6];
+Deve-se apresentar na saída de console uma consulta por código (id) de um dos funcionários [EXIGÊNCIA DE SAÍDA DE CONSOLE 4 de 6];
+Deve-se apresentar na saída de console uma consulta por setor em que 2 funcionários sejam do mesmo setor [EXIGÊNCIA DE SAÍDA DE CONSOLE 5 de 6];
+Deve-se apresentar na saída de console uma remoção de um dos funcionários seguida de uma consulta de todos os funcionários [EXIGÊNCIA DE SAÍDA DE CONSOLE 6 de 6];
