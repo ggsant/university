@@ -1,14 +1,24 @@
 
-// Obtenha a entrada padrão peso (int), a altura (double) e imprima o IMC (Índice de Massa Corporal).
+// Exercise 1
 //
-//        - IMC = peso em quilogramas dividido pela altura em metros elevada ao quadrado
+// Obtain the standard input for weight (int) and height (double), then print the BMI (Body Mass Index).
 //
-//        \[
-//        \text{IMC} = \frac{\text{PESO}}{\text{ALTURA}^2}
-//        \]
+// BMI = weight in kilograms divided by height in meters squared
 
-public class CalculateImc {
-    public void calculateImc(){
+import java.util.Scanner;
 
+public class CalculateBmi {
+    public void calculateBmi(){
+        System.out.println("Enter your weight followed by your height to calculate your BMI");
+        Scanner keyboard = new Scanner(System.in);
+
+        int weight = keyboard.nextInt();
+        double height = keyboard.nextDouble();
+
+        double bmi = weight / (height * height);
+
+        System.out.printf("The BMI is: %.2f ", bmi);
+
+        keyboard.close();
     }
 }
